@@ -5,6 +5,7 @@ import useFetch from "./../../hooks/useFetch";
 import { BASE_URL } from "./../../constants/constants";
 import { excludeMeFromUsers } from "./../../methods/chats";
 import MessageInput from "./message-input";
+import Message from "./message";
 
 export default function ChatPage() {
   const [user, setUsers] = useState([]);
@@ -25,7 +26,21 @@ export default function ChatPage() {
         ))}
       </div>
       <div className="chat-side">
-        <div className="hello">fdsf</div>
+        <div className="chat-body">
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message mine text="hello from me" />
+          <Message text="hello from other" />
+        </div>
         <MessageInput />
       </div>
     </div>

@@ -1,0 +1,36 @@
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #eee;
+  text-align: left;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.message-container div {
+  min-height: 60px;
+  padding: 6px 7px 8px 9px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.my-message {
+  justify-content: flex-end;
+}
+
+.my-message div {
+  background-color: var(--my-message);
+  max-width: 450px;
+}
+
+.other-message div {
+  background-color: var(--whats-app-dark-gray);
+}
+
+.other-message {
+  justify-content: flex-start;
+}
