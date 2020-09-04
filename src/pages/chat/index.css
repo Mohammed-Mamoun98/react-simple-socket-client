@@ -1,0 +1,17 @@
+.chat-page {
+  display: flex;
+  flex: 1;
+}
+
+.chats-side {
+  flex: 1.5;
+  background-color: var(--whats-app-dark-gray);
+}
+
+.chat-side {
+  padding: 10px 16px;
+
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}

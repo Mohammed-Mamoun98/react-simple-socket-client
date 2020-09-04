@@ -3,7 +3,7 @@ import Axios from "axios";
 import { getToken } from "../utils/auth";
 import useLoaded from "./useLoaded";
 
-export default function useAuthFetch(url, method, deps) {
+export default function useAuthFetch(url, method, body) {
   const [data, setData] = useState(null);
 
   const [loading, setLoading] = useState(false);
@@ -33,6 +33,7 @@ export default function useAuthFetch(url, method, deps) {
       const rawResponse = await authAxios({
         method,
         url,
+        data: body,
       });
       const response = rawResponse.data;
       setLoading(false);
@@ -46,6 +47,6 @@ export default function useAuthFetch(url, method, deps) {
 
   useEffect(() => {
     if (loaded) fetchData();
-  }, [deps, counter]);
+  }, [counter]);
   return { data, loading, error, reFetch };
 }

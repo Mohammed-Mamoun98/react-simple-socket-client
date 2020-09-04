@@ -1,0 +1,28 @@
+.login-container {
+  border-radius: 2rem 2rem 0rem 0rem;
+  min-height: 100vh;
+  background-color: var(--whats-app-white);
+  overflow: hidden;
+}
+
+.login-header {
+  min-height: 35vh;
+  background-color: var(--whats-app-green);
+  position: relative;
+}
+
+.login-header h5 {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 5rem;
+  font-size: 2rem;
+  color: var(--whats-app-white);
+}
+
+.form {
+  padding-left: 5rem;
+}
+
+.form * {
+  margin-top: 4rem;
+}

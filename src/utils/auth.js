@@ -10,3 +10,16 @@ export const getToken = () => {
 export const clearToken = () => {
   localStorage.removeItem("access_token");
 };
+
+export const setUserID = (token) => {
+  localStorage.setItem("UID", token);
+};
+
+export const getUserID = () => {
+  const token = localStorage.getItem("UID");
+  return token;
+};
+
+export const clearUserID = () => {
+  localStorage.removeItem("UID");
+};

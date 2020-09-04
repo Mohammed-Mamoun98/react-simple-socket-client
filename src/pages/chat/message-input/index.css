@@ -1,0 +1,10 @@
+.message-input {
+  border-radius: 21px;
+  padding: 9px 12px 11px;
+  background-color: var(--send-message-bg);
+  margin-top: auto;
+}
+
+.message-input input {
+  padding: 0;
+}

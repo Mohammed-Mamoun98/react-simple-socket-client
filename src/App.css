@@ -1,3 +1,12 @@
+:root {
+  --whats-app-green: #00ad8a;
+  --whats-app-white: #fafafa;
+  --whats-app-dark-bg: #090e11;
+  --whats-app-light-gray: #262d31;
+  --whats-app-dark-gray: #131c21;
+  --send-message-bg: #33383b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +14,23 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: var(--whats-app-dark-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .App {
-  margin: 0 auto;
-  min-height: 100vh;
-  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  min-width: 80vw;
+  max-width: 1300px;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--whats-app-light-gray);
 }
+
+/*
+Colors 
+*/

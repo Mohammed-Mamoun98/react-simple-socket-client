@@ -40,6 +40,6 @@ export default function useFetch(url, method = "GET", body, deps) {
 
   useEffect(() => {
     if (loaded) fetchData();
-  }, [deps, counter]);
+  }, [deps, counter, loaded]);
   return { data, loading, error, reFetch };
 }
